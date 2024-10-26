@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Sai Mushroom</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Om Sai Mushroom</h1>
+        <img src="images/Banner.png" alt="Banner">
+        <nav>
+            <ul>
+                <li><a href="#mushroom">Mushroom</a></li>
+                <li><a href="#murabba">Murabba</a></li>
+                <li><a href="#pickles">Pickles</a></li>
+                <li><a href="#other">Other</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h2>Nature's Gift</h2>
+    </section>
+
+    <!-- Product Sections -->
+    <!-- MUSHROOMS PRODUCT -->
+    <section id="mushroom" class="product-category">
+        <h2>Mushroom</h2>
+        <div class="product-container">
+            <div class="product-card"> 
+                <img src="images/Dry Mushrooms.png" alt="Dry Mushroom">
+                <h3>Dry Mushroom (25gm)</h3>
+                <p>Flavorful dried mushrooms for your recipes.</p>
+                <p class="price">₹50</p>
+                <button onclick="addToCart('Dry Mushroom', 50)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card"> 
+                <img src="images/Fresh Mushrooms.png" alt="Fresh Mushroom">
+                <h3>Fresh Mushroom (100gm)</h3>
+                <p>Fresh oyster mushrooms direct from the farms.</p>
+                <p class="price">₹40</p>
+                <button onclick="addToCart('Fresh Mushroom', 40)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card"> 
+                <img src="images/Mushroom Papad.png" alt="Mushroom Papad">
+                <h3>Mushroom Papad (100gm)</h3>
+                <p>Crispy papad made with flavorful mushrooms.</p>
+                <p class="price">₹60</p>
+                <button onclick="addToCart('Mushroom Papad', 60)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card"> 
+                <img src="images/Dry mushroom powder.png" alt="Dry Mushroom Powder">
+                <h3>Dry Mushroom Powder (20gm)</h3>
+                <p>Pure dry mushroom powder for seasoning.</p>
+                <p class="price">₹50</p>
+                <button onclick="addToCart('Dry Mushroom Powder', 50)">Add to Cart</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- SNACKS -->
+    <section id="snacks" class="product-category">
+        <h2>Snacks</h2>
+        <div class="product-container">
+            <div class="product-card"> 
+                <img src="images/Sendriya Gul.png" alt="Sendriya Gul">
+                <h3>Sendriya Gul (500gm)</h3>
+                <p>Organic jaggery made with traditional methods.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Sendriya Gul', 80)">Add to Cart</button>
+            </div>
+
+            <div class="product-card"> 
+                <img src="images/Chai masala.png" alt="Chai Masala">
+                <h3>Chai Masala (25gm)</h3>
+                <p>Aromatic chai masala to enhance your tea experience.</p>
+                <p class="price">₹30</p>
+                <button onclick="addToCart('Chai Masala', 30)">Add to Cart</button>
+            </div>
+
+            <div class="product-card"> 
+                <img src="images/Nankatai.png" alt="Nachani Nankatai">
+                <h3>Nachani Nankatai (15 pieces)</h3>
+                <p>Healthy and tasty nachani nankatai cookies.</p>
+                <p class="price">₹50</p>
+                <button onclick="addToCart('Nachani Nankatai', 50)">Add to Cart</button>
+            </div>
+
+            <div class="product-card"> 
+                <img src="images/Biscuit.png" alt="Butter Biscuit">
+                <h3>Butter Biscuit (15 pieces)</h3>
+                <p>Rich buttery biscuits that melt in your mouth.</p>
+                <p class="price">₹50</p>
+                <button onclick="addToCart('Butter Biscuit', 50)">Add to Cart</button>
+            </div>
+
+            <div class="product-card"> 
+                <img src="images/amla supari.png" alt="Aavala Supari">
+                <h3>Aavala Supari (20gm)</h3>
+                <p>Natural Amla supari for a refreshing taste.</p>
+                <p class="price">₹20</p>
+                <button onclick="addToCart('Aavala Supari', 20)">Add to Cart</button>
+            </div>
+
+            <div class="product-card"> 
+                <img src="images/amla Candy.png" alt="Aavala Candy">
+                <h3>Aavala Candy (40gm)</h3>
+                <p>Delicious and healthy Amla candy.</p>
+                <p class="price">₹20</p>
+                <button onclick="addToCart('Aavala Candy', 20)">Add to Cart</button>
+            </div>
+
+            <div class="product-card"> 
+                <img src="images/Adrak supari.png" alt="Adrak Supari">
+                <h3>Adrak Supari (8gm)</h3>
+                <p>Ginger-flavored supari for a refreshing taste.</p>
+                <p class="price">₹10</p>
+                <button onclick="addToCart('Adrak Supari', 10)">Add to Cart</button>
+            </div>
+
+            <div class="product-card"> 
+                <img src="images/Adrak Candy.png" alt="Adrak Candy">
+                <h3>Adrak Candy (40gm)</h3>
+                <p>Sweet ginger candy with a spicy kick.</p>
+                <p class="price">₹30</p>
+                <button onclick="addToCart('Adrak Candy', 30)">Add to Cart</button>
+            </div>
+
+            <div class="product-card"> 
+                <img src="images/gatagat.png" alt="Borakut Gatagat Goli">
+                <h3>Borakut Gatagat Goli (60gm)</h3>
+                <p>Sweet and tangy goli made with natural ingredients.</p>
+                <p class="price">₹30</p>
+                <button onclick="addToCart('Borakut Gatagat Goli', 30)">Add to Cart</button>
+            </div>
+
+            <div class="product-card"> 
+                <img src="images/Honey.png" alt="Honey">
+                <h3>Honey (250gm)</h3>
+                <p>Pure, organic honey from local farms.</p>
+                <p class="price">₹120</p>
+                <button onclick="addToCart('Honey', 120)">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MURABBA -->
+    <section id="murabba" class="product-category">
+        <h2>Murabba</h2>
+        <div class="product-container">
+            <div class="product-card"> 
+                <img src="images/karavanda_muraba.png" alt="Karavanda Muraba">
+                <h3>Karavanda Muraba (300gm)</h3>
+                <p>Sweet and tangy Karavanda Muraba, perfect for desserts.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Karavanda Muraba', 80)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card"> 
+                <img src="images/mushroom_muraba.png" alt="Mushroom Muraba">
+                <h3>Mushroom Muraba (200gm)</h3>
+                <p>Delicious mushroom muraba with a unique flavor.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Mushroom Muraba', 80)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card"> 
+                <img src="images/Bael Murabba.png" alt="Beal Muraba">
+                <h3>Beal Muraba (300gm)</h3>
+                <p>Healthy Beal Muraba, made from fresh Beal fruits.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Beal Muraba', 80)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card"> 
+                <img src="images/Dry Fruit with Honey.png" alt="Dry Fruits With Honey">
+                <h3>Dry Fruits With Honey (250gm)</h3>
+                <p>Nutritious dry fruits mixed with natural honey.</p>
+                <p class="price">₹120</p>
+                <button onclick="addToCart('Dry Fruits With Honey', 120)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card"> 
+                <img src="images/Ammba Murabba.png" alt="Aamba Muraba">
+                <h3>Aamba Muraba (300gm)</h3>
+                <p>Sweet mango muraba, a delightful treat.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Aamba Muraba', 80)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card"> 
+                <img src="images/Amla Murabba.png" alt="Aavala Muraba">
+                <h3>Aavala Muraba (300gm)</h3>
+                <p>Rich in vitamin C, Aavala Muraba is a healthy choice.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Aavala Muraba', 80)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- PICKLES -->
+    <section id="pickles" class="product-category">
+        <h2>Pickles</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="images/Haladiche Lonche.png" alt="Haladi Che Lonche">
+                <h3>Haladi Che Lonche (250gm)</h3>
+                <p>Authentic turmeric pickle made with fresh ingredients.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Haladi Che Lonche', 80)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/Mushroom Lonche Tikhat.png" alt="Mushroom Lonche Tikhat">
+                <h3>Mushroom Lonche Tikhat (200gm)</h3>
+                <p>Spicy mushroom pickle perfect with meals.</p>
+                <p class="price">₹100</p>
+                <button onclick="addToCart('Mushroom Lonche Tikhat', 100)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/Karavanta Lonche.png" alt="Karavanda Lonche">
+                <h3>Karavanda Lonche (250gm)</h3>
+                <p>Traditional spiced berry pickle.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Karavanda Lonche', 80)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/mix lonche.png" alt="Mix Lonche">
+                <h3>Mix Lonche (250gm)</h3>
+                <p>Mixed vegetable pickle bursting with flavors.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Mix Lonche', 80)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/Mirachiche Lonche Green.png" alt="Mirachi Lonche (Green)">
+                <h3>Mirachi Lonche (Green) (250gm)</h3>
+                <p>Green chili pickle for a spicy kick.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Mirachi Lonche (Green)', 80)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/Lesawa Lonche.png" alt="Lesava Lonche">
+                <h3>Lesava Lonche (300gm)</h3>
+                <p>Classic pickle with a tangy flavor.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Lesava Lonche', 80)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/Mirachi Lonche Red.png" alt="Mirachi Lonche (Red)">
+                <h3>Mirachi Lonche (Red) (250gm)</h3>
+                <p>Red chili pickle for extra heat.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Mirachi Lonche (Red)', 80)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/Tamatar Lonche.png" alt="Tamatar Lonche">
+                <h3>Tamatar Lonche (250gm)</h3>
+                <p>Delicious tomato pickle made from fresh tomatoes.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Tamatar Lonche', 80)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/Mango Ginger pickle.png" alt="Mango Ginger Pickle">
+                <h3>Mango Ginger Pickle (250gm)</h3>
+                <p>Unique mango ginger pickle with a spicy twist.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Mango Ginger Pickle', 80)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/Mushroom Lonche Sweet.png" alt="Mushroom Lonche Sweet">
+                <h3>Mushroom Lonche Sweet (200gm)</h3>
+                <p>Sweet mushroom pickle with a hint of spices.</p>
+                <p class="price">₹100</p>
+                <button onclick="addToCart('Mushroom Lonche Sweet', 100)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/Ambadiche lonche.png" alt="Aambadi Lonche">
+                <h3>Aambadi Lonche (250gm)</h3>
+                <p>Refreshing aambadi pickle with natural flavors.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Aambadi Lonche', 80)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/kavatche lonche.png" alt="Kavath Lonche">
+                <h3>Kavath Lonche (250gm)</h3>
+                <p>Traditional pickle with a unique taste.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Kavath Lonche', 80)">Add to Cart</button>
+            </div>
+
+            <div class="product-card"> 
+                <img src="images/borache lonche.png" alt="Bor Lonche">
+                <h3>Bor Lonche (300gm)</h3>
+                <p>Delicious Bor pickle made with traditional spices.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Bor Lonche', 80)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card"> 
+                <img src="images/amlache lonche.png" alt="Aavala Lonche">
+                <h3>Aavala Lonche (250gm)</h3>
+                <p>Nutritious Aavala pickle, perfect for every meal.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Aavala Lonche', 80)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card"> 
+                <img src="images/fanasche lonche.png" alt="Fanas Lonche">
+                <h3>Fanas Lonche (250gm)</h3>
+                <p>Homemade Fanas pickle with authentic flavor.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Fanas Lonche', 80)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card"> 
+                <img src="images/methiche lonche.png" alt="Methi Lonche">
+                <h3>Methi Lonche (250gm)</h3>
+                <p>Flavorful Methi pickle, crafted with care.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Methi Lonche', 80)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card"> 
+                <img src="images/suranche lonche.png" alt="Suran Lonche">
+                <h3>Suran Lonche (250gm)</h3>
+                <p>Suran pickle with a spicy twist.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Suran Lonche', 80)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card"> 
+                <img src="images/limbache lonche.png" alt="Limbache Lonche">
+                <h3>Limbache Lonche (300gm)</h3>
+                <p>Fresh lemon pickle with a zesty flavor.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Limbache Lonche', 80)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card"> 
+                <img src="images/lasunche lonche.png" alt="Lasun Lonche">
+                <h3>Lasun Lonche (250gm)</h3>
+                <p>Spicy garlic pickle, a perfect accompaniment.</p>
+                <p class="price">₹100</p>
+                <button onclick="addToCart('Lasun Lonche', 100)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card"> 
+                <img src="images/ambache lonche.png" alt="Aamba Lonche">
+                <h3>Aamba Lonche (280gm)</h3>
+                <p>Mango pickle made from fresh, handpicked mangoes.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Aamba Lonche', 80)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card"> 
+                <img src="images/karla lonche.png" alt="Karale Lonche">
+                <h3>Karale Lonche (250gm)</h3>
+                <p>Unique Karale pickle, rich in flavors.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Karale Lonche', 80)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card"> 
+                <img src="images/chinche lonche.png" alt="Chincheche Lonache">
+                <h3>Chincheche Lonache (300gm)</h3>
+                <p>Tamarind pickle, a delightful mix of sweet and sour.</p>
+                <p class="price">₹80</p>
+                <button onclick="addToCart('Chincheche Lonache', 80)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card"> 
+                <img src="images/Dahi mirchi.png" alt="Dahi Mirache">
+                <h3>Dahi Mirache (25gm)</h3>
+                <p>Traditional curd chili, sun-dried for perfection.</p>
+                <p class="price">₹30</p>
+                <button onclick="addToCart('Dahi Mirache', 30)">Add to Cart</button>
+            </div>
+                        
+            <div class="product-card"> 
+                <img src="images/khandu.png" alt="Khandu Chaka Powder">
+                <h3>Khandu Chaka Powder (20gm)</h3>
+                <p>Pure, finely ground Khandu Chaka powder.</p>
+                <p class="price">₹20</p>
+                <button onclick="addToCart('Khandu Chaka Powder', 20)">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+<!-- OTHER PRODUCTS -->
+
+    <section id="other" class="product-category">
+        <h2>Other</h2>
+        <div class="product-container">
+            <div class="product-card"> 
+                <img src="images/Kadipata Powder.png" alt="Kadipaata Powder">
+                <h3>Kadipaata Powder (50gm)</h3>
+                <p>Freshly ground Kadipaata powder, packed with flavor.</p>
+                <p class="price">₹30</p>
+                <button onclick="addToCart('Kadipaata Powder', 30)">Add to Cart</button>
+            </div>
+
+            <div class="product-card"> 
+                <img src="images/Neem Powder.png" alt="Neem Powder">
+                <h3>Neem Powder (50gm)</h3>
+                <p>Natural neem powder with multiple health benefits.</p>
+                <p class="price">₹30</p>
+                <button onclick="addToCart('Neem Powder', 30)">Add to Cart</button>
+            </div>
+
+            <div class="product-card"> 
+                <img src="images/Vermicompost.png" alt="Vermicompost">
+                <h3>Vermicompost (1Kg)</h3>
+                <p>Rich organic vermicompost for healthy plant growth.</p>
+                <p class="price">₹30</p>
+                <button onclick="addToCart('Vermicompost', 30)">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Om Sai Mushroom. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="js/script.js"></script>
+</body>
+</html>
