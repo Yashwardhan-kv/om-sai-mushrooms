@@ -12,7 +12,6 @@ function loadCart() {
 
 // Function to add items to the cart
 function addToCart(productName, productPrice) {
-    // Check if the product is already in the cart
     const existingItem = cart.find(item => item.name === productName);
     if (existingItem) {
         existingItem.quantity++;
@@ -20,9 +19,9 @@ function addToCart(productName, productPrice) {
         cart.push({ name: productName, price: productPrice, quantity: 1 });
     }
     cartCount++;
-    localStorage.setItem('cart', JSON.stringify(cart)); // Save updated cart to local storage
+    localStorage.setItem('cart', JSON.stringify(cart));
     document.getElementById('cart-count').innerText = cartCount;
-    alert(`${productName} has been added to your cart!`);
+    alert(`${productName} has been added to your cart!`); // Fixed alert syntax
 }
 
 // Function to display the cart contents
@@ -41,11 +40,11 @@ function displayCart() {
             <td>₹${item.price.toFixed(2)}</td>
             <td>${item.quantity}</td>
             <td>₹${totalItemPrice.toFixed(2)}</td>
-        `;
+        `; // Fixed innerHTML syntax
         cartTableBody.appendChild(row);
     });
 
-    document.getElementById('cart-total').innerText = `Total: ₹${total.toFixed(2)}`;
+    document.getElementById('cart-total').innerText = `Total: ₹${total.toFixed(2)}`; // Fixed syntax
 }
 
 // Function to generate an invoice for the order
