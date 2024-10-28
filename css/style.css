@@ -39,8 +39,6 @@ header nav a {
     color: #fff;
     padding: 60px 20px;
     text-align: center;
-    width: auto;
-    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,7 +62,7 @@ header nav a {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: left;
+    justify-content: flex-start;
 }
 
 .product-card {
@@ -72,7 +70,7 @@ header nav a {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
-    width: calc(25% - 20px);
+    width: calc(25% - 20px); /* 4 cards in each row */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s;
@@ -120,13 +118,13 @@ button:hover {
 /* Responsive Styles */
 @media (max-width: 1200px) {
     .product-card {
-        width: calc(33.33% - 20px);
+        width: calc(33.33% - 20px); /* 3 cards in a row */
     }
 }
 
 @media (max-width: 900px) {
     .product-card {
-        width: calc(50% - 20px);
+        width: calc(50% - 20px); /* 2 cards in a row */
     }
 }
 
@@ -143,7 +141,7 @@ button:hover {
     }
 
     .product-card {
-        width: 100%;
+        width: 100%; /* 1 card in a row */
     }
 
     header nav ul {
